@@ -1,3 +1,5 @@
+// Mongoose Relationships Lecture with Tristan Hall
+
 const dotenv = require("dotenv");
 dotenv.config();
 const mongoose = require("mongoose");

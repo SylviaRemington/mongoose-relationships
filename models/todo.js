@@ -9,8 +9,9 @@ const todoSchema = new mongoose.Schema ({
 
 const Todo = mongoose.model('Todo', todoSchema);
 
+//What module exports does...
+//This is the model that you would use to do Todo.create or Todo.find, etc.
+//This is the bit that does the communication with MongoDB below:
 module.exports = Todo;
 
-//what does module exports... use to save data into database / use as Todo.find
-//the communication bit with mongoDB
 

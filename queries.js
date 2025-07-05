@@ -43,8 +43,17 @@ const findTodos = async () => {
 
 //creating a function that will create a subtask
 const createSubtask = async () => {
+    //this is an actual id we have
+    const todOId = '68687d616cc4349f107ee166';
 
+    //then going to look up id & fetch the parent document
+    const todo = await Todo.findById(todOId);
 }
+
+// ! Stopping here with code along at 57 minutes 19 seconds in to the lecture - It's going along
+// ! really fast & I want to be present with what he's saying.
+
+
 /*------------------------------- Run Queries -------------------------------*/
 
 const runQueries = async () => {

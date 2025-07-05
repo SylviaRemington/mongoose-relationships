@@ -45,5 +45,6 @@ const findTodos = async () => {
 
 const runQueries = async () => {
   console.log('Queries running.');
-  await createTodo();
+//   await createTodo();
+await findTodos();
 };

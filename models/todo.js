@@ -3,6 +3,7 @@
 const mongoose = require("mongoose");
 
 // subtask - this is a sub-document Schema - put it above the todoSchema
+// Then after we place this subtaask Schema here, we can embed it in the todoSchema
 const subtaskSchema = new mongoose.Schema({
   text: String,
   isComplete: Boolean,

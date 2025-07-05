@@ -11,6 +11,7 @@ const subtaskSchema = new mongoose.Schema({
 const todoSchema = new mongoose.Schema ({
     text: String,
     isComplete: Boolean,
+    subtasks: [subtaskSchema], // ! This is where I stopped from the recording at 53:51
 });
 
 const Todo = mongoose.model('Todo', todoSchema);

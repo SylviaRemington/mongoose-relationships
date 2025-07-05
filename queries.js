@@ -41,6 +41,9 @@ const findTodos = async () => {
   console.log('All todos:', todos);
 };
 
+const createSubtask = async () => {
+    
+}
 /*------------------------------- Run Queries -------------------------------*/
 
 const runQueries = async () => {

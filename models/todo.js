@@ -13,7 +13,7 @@ const todoSchema = new mongoose.Schema ({
     text: String,
     isComplete: Boolean,
     //below is where we embed the subtask in the todoSchema
-    subtasks: [subtaskSchema], 
+    subtasks: [subtaskSchema], // This is embedded.
 });
 
 const Todo = mongoose.model('Todo', todoSchema);

@@ -2,6 +2,12 @@
 // Then later can create multiple sub-tasks
 const mongoose = require("mongoose");
 
+// subtask - this is a sub-document Schema
+const subtaskSchema = new mongoose.Schema({
+  text: String,
+  isComplete: Boolean,
+});
+
 const todoSchema = new mongoose.Schema ({
     text: String,
     isComplete: Boolean,

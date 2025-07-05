@@ -44,11 +44,25 @@ const findTodos = async () => {
 //creating a function that will create a subtask
 const createSubtask = async () => {
     //this is an actual id we have
-    const todOId = '68687d616cc4349f107ee166';
+    // This is the id we're looking for and creating a variable for it to make it easier to add to code without an error with the long number.
+    const todoId = '68687d616cc4349f107ee166';
 
-    //then going to look up id & fetch the parent document
-    const todo = await Todo.findById(todOId);
+    //then going to look up id & fetch the parent document 
+    // Need to go to the database and get the document we want to create the subtask for.
+    const todo = await Todo.findById(todoId);
 }
+
+// Need subtaskData to push in
+const subtaskData = {
+  text: "Learn how props work",
+  isComplete: false,
+};
+
+// Then need to push subtaskData to DB
+todo.subtasks.push(subtaskData);
+
+// Then save it.
+todo.save();
 
 // ! Stopping here with code along at 57 minutes 19 seconds in to the lecture - It's going along
 // ! really fast & I want to be present with what he's saying.

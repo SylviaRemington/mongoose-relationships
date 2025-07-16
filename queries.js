@@ -1,6 +1,7 @@
 // Mongoose Relationships Lecture with Tristan Hall
 // Not using express in this - Just doing this as pure mongoose queries / We can always put it into an express app later 
 
+
 const dotenv = require("dotenv");
 dotenv.config();
 const mongoose = require("mongoose");
